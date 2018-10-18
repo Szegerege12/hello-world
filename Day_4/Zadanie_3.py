@@ -9,3 +9,9 @@ Wynik powinien wyglądać tak:
 3 x 3 = 9
 itd.
 """
+### pobieranie liczby
+liczba = int(input("Podaj liczbe: "))
+
+### petla 11 operacji dla zmiennego i i liczby
+for i in range(1,11):
+    print(liczba,'x',i,'=',liczba * i)
