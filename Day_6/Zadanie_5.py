@@ -28,3 +28,28 @@ s = 50
 wynik:
 Ani nie udało się zrobić zakupów za 50zł.
 """
+### deklaracja list zawierajacych ceny klawiatur i pendirve
+
+klawiatury = [11 , 17 , 18 , 23, 67 , 44 , 60 , 99]
+pendrive = [16, 19, 26, 25, 30, 49, 39]
+
+### wyswietlenie cennika
+print("###cennik klawiatur###")
+for counter, value in enumerate(klawiatury, start=1):
+    print(counter, value,"zl")
+
+print("###cennik pendrivów###")
+for counter, value in enumerate(pendrive, start=1):
+    print(counter, value,"zl")
+### wprowadzenie pieniedzy przez klientke
+
+srodki=int(input("Prosze podac wysokosc srodków przeznaczonych na zakupy: "))
+klawiatura_cena=int(input("Prosze podac cene klawiatury: "))
+pendrive_cena=int(input("Prosze podac cene pendrive: "))
+suma = klawiatura_cena + pendrive_cena
+
+if srodki >= suma:
+    print("Zakup udany. Wydane na klawiature",klawiatura_cena,"Wydane na pendrive",pendrive_cena,"Wydane srodki razem:",suma,"zl")
+else:
+    print("Za malo srodkow")
+
