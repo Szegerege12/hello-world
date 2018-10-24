@@ -16,3 +16,14 @@ Użyj list comprehension, żeby:
    lista_2 = [1, 2, 3, 4]
    wynik => [[1.0, 0.5, 0.3333333333333333, 0.25], [2.0, 1.0, 0.6666666666666666, 0.5], [3.0, 1.5, 1.0, 0.75]]
 """
+### ad 1.
+print([x**3 for x in range(1,500) if x % 5 ==0])
+### ad 2.
+tupla =(1 , 2)
+print([(x,y) for x in tupla for y in tupla])
+### ad 3.
+print([[x/2 , x/3 , x] for x in range(1,500) if x % 4 ==3])
+### ad 4.
+lista_1 = [1, 2, 3]
+lista_2 = [1, 2, 3, 4]
+print([[x/y for y in lista_2] for x in lista_1])

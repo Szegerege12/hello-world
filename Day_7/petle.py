@@ -9,5 +9,4 @@ while True:
 
 for liczba in range(100):
     if liczba % 2 == 0:
-        continue
-    print(f"Wypisuję tylko liczby niepodzielne przez 2: {liczba}")
+        print(f"Wypisuję tylko liczby odzielne przez 2: {liczba}")
