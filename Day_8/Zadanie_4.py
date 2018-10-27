@@ -6,10 +6,12 @@ Popraw błędy (zdebuguj kod)
 """
 patients = [[70, 1.8], [80, 1.9], [150, 1.7]]
 
-def calculate_bmi(w, h):
-    return int(h // (w * 2))
+def calculate_bmi(height, weight):
+    return weight / (height ** 2)
 
-for i, patient in enumerate(patients):
-    weight, height = patients[0]
-    bmi = calculate_bmi(height, weigth)
-    print("Patient's BMI is: {}".format(bmi)
+for patient in patients:
+    weight, height = patient
+    bmi = calculate_bmi(height, weight)
+    print(patient)
+    print(bmi)
+    print("Patient's BMI is: {:.2f}".format(bmi))
